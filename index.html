@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldKnowledge - Sua Agência de Viagens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animate on Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-gray-900/80 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+                <i class="fas fa-bee mr-2"></i>WorldKnowledge
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#destinos" class="text-gray-300 hover:text-yellow-400 transition">Destinos</a>
+                <a href="#diferenciais" class="text-gray-300 hover:text-yellow-400 transition">Diferenciais</a>
+                <a href="#pacotes" class="text-gray-300 hover:text-yellow-400 transition">Pacotes</a>
+                <a href="#depoimentos" class="text-gray-300 hover:text-yellow-400 transition">Depoimentos</a>
+                <a href="#contato" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full hover:bg-yellow-500 transition shadow font-bold">Entre em Contato</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900">
+            <a href="#destinos" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Destinos</a>
+            <a href="#diferenciais" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Diferenciais</a>
+            <a href="#pacotes" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Pacotes</a>
+            <a href="#depoimentos" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Depoimentos</a>
+            <a href="#contato" class="block py-3 px-6 text-sm bg-yellow-400 text-gray-900 text-center font-bold">Entre em Contato</a>
+        </div>
+    </header>
+
+    <!-- Seção Carrossel -->
+    <section class="carousel-container w-full">
+        <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2070&auto=format&fit=crop" alt="Praia tropical ensolarada">
+                <div class="carousel-caption">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-2">Descubra Praias Paradisíacas</h2>
+                    <p class="text-lg md:text-xl">Relaxe nas areias brancas e águas cristalinas dos melhores destinos do mundo.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1966&auto=format&fit=crop" alt="Cidade histórica europeia">
+                <div class="carousel-caption">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-2">Explore Cidades Históricas</h2>
+                    <p class="text-lg md:text-xl">Viaje no tempo e conheça a cultura e a arquitetura de lugares incríveis.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b_470?q=80&w=2070&auto=format&fit=crop" alt="Montanhas e lago na natureza">
+                <div class="carousel-caption">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-2">Aventure-se na Natureza</h2>
+                    <p class="text-lg md:text-xl">Conecte-se com a natureza em paisagens de tirar o fôlego.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Seção Destinos Populares -->
+        <section id="destinos" class="my-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-2" data-aos="fade-up">Destinos em Destaque</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Explore alguns dos lugares mais procurados por nossos viajantes. Cada um oferece uma experiência única e inesquecível.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Destino 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=2070&auto=format&fit=crop" alt="Tóquio, Japão">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Tóquio, Japão</h3>
+                        <p class="text-gray-400 text-base">Uma metrópole que mistura o ultratecnológico com o tradicional, de templos antigos a arranha-céus iluminados por neon.</p>
+                    </div>
+                </div>
+                <!-- Card Destino 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2070&auto=format&fit=crop" alt="Rio de Janeiro, Brasil">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Rio de Janeiro, Brasil</h3>
+                        <p class="text-gray-400 text-base">Conhecida como a Cidade Maravilhosa, com suas praias famosas, o Pão de Açúcar e a estátua do Cristo Redentor.</p>
+                    </div>
+                </div>
+                <!-- Card Destino 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?q=80&w=2070&auto=format&fit=crop" alt="Paris, França">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Paris, França</h3>
+                        <p class="text-gray-400 text-base">A cidade do amor, famosa por sua arte, gastronomia, cultura e monumentos icônicos como a Torre Eiffel e o Louvre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Por Que Escolher a WorldKnowledge -->
+        <section id="diferenciais" class="my-16 bg-gray-800 py-16 px-4 rounded-lg" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-center text-white mb-2">Por Que Escolher a WorldKnowledge?</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Nós não apenas vendemos viagens, nós criamos experiências inesquecíveis, pensadas em cada detalhe para você.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-map-signs text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Roteiros Personalizados</h3>
+                    <p class="text-gray-400">Criamos roteiros sob medida que atendem aos seus interesses, ritmo e orçamento.</p>
+                </div>
+                <div class="p-8" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-headset text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Suporte 24/7</h3>
+                    <p class="text-gray-400">Nossa equipe está disponível a qualquer hora para garantir que sua viagem seja tranquila.</p>
+                </div>
+                <div class="p-8" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-star text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Guias Especialistas</h3>
+                    <p class="text-gray-400">Conte com guias locais experientes que te mostrarão o melhor de cada destino.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Pacotes -->
+        <section id="pacotes" class="my-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-2" data-aos="fade-up">Nossos Pacotes de Viagem</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Temos o pacote perfeito para você, seja para uma escapada romântica, uma aventura em família ou uma exploração solo.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                 <div class="bg-gray-800 p-8 rounded-lg shadow-md border-t-4 border-yellow-400" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-sun text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Pacote Sol e Praia</h3>
+                    <p class="text-gray-400 mb-4">7 dias nos melhores resorts do Caribe, com tudo incluído.</p>
+                    <span class="text-3xl font-bold text-yellow-400">R$ 4.500</span>
+                </div>
+                 <div class="bg-gray-800 p-8 rounded-lg shadow-md border-t-4 border-yellow-400" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-mountain text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Aventura nos Andes</h3>
+                    <p class="text-gray-400 mb-4">10 dias de trekking e exploração cultural no Peru.</p>
+                    <span class="text-3xl font-bold text-yellow-400">R$ 6.200</span>
+                </div>
+                 <div class="bg-gray-800 p-8 rounded-lg shadow-md border-t-4 border-yellow-400" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-landmark text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Tour Europeu</h3>
+                    <p class="text-gray-400 mb-4">15 dias visitando os principais pontos de Paris, Roma e Berlim.</p>
+                    <span class="text-3xl font-bold text-yellow-400">R$ 9.800</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="my-16 bg-gray-800 py-16 px-4 rounded-lg" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-center text-white mb-2">O Que Nossos Viajantes Dizem</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">A maior recompensa é a satisfação de quem viaja conosco. Veja algumas experiências.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1972&auto=format&fit=crop" alt="Foto da cliente Ana Clara">
+                    <p class="text-gray-400 italic mb-4">"A viagem para o Japão foi a realização de um sonho. A WorldKnowledge cuidou de tudo com perfeição. Inesquecível!"</p>
+                    <p class="font-bold text-white text-lg">Ana Clara Sousa</p>
+                    <p class="text-sm text-yellow-400">Viagem para Tóquio</p>
+                </div>
+                <div class="p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Foto do cliente Bruno Lima">
+                    <p class="text-gray-400 italic mb-4">"O trekking nos Andes foi desafiador e maravilhoso. O suporte da equipe foi fundamental. Recomendo muito!"</p>
+                    <p class="font-bold text-white text-lg">Bruno Lima</p>
+                    <p class="text-sm text-yellow-400">Aventura no Peru</p>
+                </div>
+                <div class="p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <img class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop" alt="Foto do cliente Família Ribeiro">
+                    <p class="text-gray-400 italic mb-4">"Nossas férias em família no Caribe foram perfeitas. O resort era incrível e as crianças amaram. Obrigado!"</p>
+                    <p class="font-bold text-white text-lg">Família Ribeiro</p>
+                    <p class="text-sm text-yellow-400">Pacote Sol e Praia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Galeria de Fotos -->
+        <section id="galeria" class="my-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-2" data-aos="fade-up">Nossa Galeria de Aventuras</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Imagens que valem mais que mil palavras. Inspire-se para sua próxima jornada.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2070&auto=format&fit=crop" alt="Pessoas em uma praia" class="w-full h-full object-cover transform hover:scale-110 transition duration-300"></div>
+                <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1974&auto=format&fit=crop" alt="Montanhas refletidas em um lago" class="w-full h-full object-cover transform hover:scale-110 transition duration-300"></div>
+                <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="400"><img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2070&auto=format&fit=crop" alt="Aurora Boreal na Noruega" class="w-full h-full object-cover transform hover:scale-110 transition duration-300"></div>
+                <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-delay="500"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=2070&auto=format&fit=crop" alt="Machu Picchu no Peru" class="w-full h-full object-cover transform hover:scale-110 transition duration-300"></div>
+            </div>
+        </section>
+
+        <!-- Seção do Blog -->
+        <section id="blog" class="my-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-2" data-aos="fade-up">Dicas do Nosso Blog</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Dicas, guias e inspirações para te ajudar a planejar a viagem perfeita.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1974&auto=format&fit=crop" alt="Mochila com um mapa">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Como Montar a Mala Perfeita</h3>
+                        <p class="text-gray-400 text-base mb-4">Aprenda a ser prático e levar apenas o essencial sem passar aperto.</p>
+                        <a href="#" class="text-yellow-400 font-bold hover:text-yellow-300">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop" alt="Comida variada em um grill">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Guia Gastronômico do Mediterrâneo</h3>
+                        <p class="text-gray-400 text-base mb-4">Uma viagem pelos sabores frescos que você não pode perder.</p>
+                        <a href="#" class="text-yellow-400 font-bold hover:text-yellow-300">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?q=80&w=2070&auto=format&fit=crop" alt="Casal olhando um mapa">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-white">Dicas para uma Viagem Romântica</h3>
+                        <p class="text-gray-400 text-base mb-4">Planeje a viagem perfeita com seu parceiro e crie memórias incríveis.</p>
+                        <a href="#" class="text-yellow-400 font-bold hover:text-yellow-300">Leia Mais &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Mapa -->
+        <section id="mapa" class="my-16">
+            <h2 class="text-4xl font-bold text-center text-white mb-2" data-aos="fade-up">Explore o Mundo</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Use o mapa interativo para começar a planejar sua próxima aventura. Clique, arraste e descubra lugares incríveis.</p>
+            <div class="w-full h-[500px] rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15731427.273291937!2d-45.71975!3d-14.417395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99564f331ad061%3A0x199148d3876936!2sBrazil!5e0!3m2!1sen!2sus!4v1678886561234!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="my-16 bg-gray-800 p-8 md:p-12 rounded-lg shadow-xl" data-aos="fade-up">
+             <h2 class="text-4xl font-bold text-center text-white mb-2">Planeje Sua Viagem!</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Fale com um de nossos especialistas. Preencha o formulário abaixo e nós entraremos em contato para criar a viagem dos seus sonhos.</p>
+            <form class="max-w-xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-400 font-medium mb-2">Nome</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-400 font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="destination" class="block text-gray-400 font-medium mb-2">Destino de Interesse</label>
+                    <input type="text" id="destination" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Ex: Caribe, Europa...">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-400 font-medium mb-2">Mensagem</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Conte-nos um pouco sobre a viagem que você imagina..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-yellow-400 text-gray-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition shadow-lg w-full md:w-auto">Enviar Solicitação</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-black text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">WorldKnowledge</h3>
+                    <p class="text-gray-400">Criando memórias inesquecíveis ao redor do globo.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#destinos" class="text-gray-400 hover:text-yellow-400">Destinos</a></li>
+                        <li class="mb-2"><a href="#diferenciais" class="text-gray-400 hover:text-yellow-400">Diferenciais</a></li>
+                        <li class="mb-2"><a href="#pacotes" class="text-gray-400 hover:text-yellow-400">Pacotes</a></li>
+                        <li class="mb-2"><a href="#depoimentos" class="text-gray-400 hover:text-yellow-400">Depoimentos</a></li>
+                         <li class="mb-2"><a href="#blog" class="text-gray-400 hover:text-yellow-400">Blog</a></li>
+                        <li class="mb-2"><a href="#contato" class="text-gray-400 hover:text-yellow-400">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 text-2xl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 WorldKnowledge. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-400 text-gray-900 w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible z-50 hover:bg-yellow-500 transition">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+
